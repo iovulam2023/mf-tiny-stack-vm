@@ -81,7 +81,7 @@ function run(P: Uint8Array, inp: Uint8Array): { out: Uint8Array; code: number } 
         break;
       }
       case 0x17: // NEG
-        D[sp - 1] = -D[sp - 1] | 0;
+        D[sp - 1] = -D[sp - 1];
         break;
       case 0x1b: // NOT
         D[sp - 1] = ~D[sp - 1];
